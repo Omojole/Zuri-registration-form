@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+
+  <body>
+    <main class="center">
+        <form action="./sucess.html" class="form">
+          <h4>Login</h4>
+          <button>
+            <img src="./assets/image/google.png" alt="img" class="img" />
+            <h4>Login with google</h4>
+          </button>
+          <div class="seperator">
+            <div class="line"></div>
+            <h5 class="label">or Login with email</h5>
+            <div class="line"></div>
+          </div>
+          <div>
+            <label for="email" class="label"> Email*</label>
+            <br />
+            <input
+              type="email"
+              class="input input-1"
+              placeholder="someone@gmail.com"
+              id="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="must end with a domain .com"
+              required
+            />
+          </div>
+          <div>
+            <label for="Password" class="label">Password*</label>
+            <br />
+            <input
+              type="password"
+              class="input"
+              placeholder="Password"
+              id="password"
+              name="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+            />
+            <br />
+            <small
+              >Must contain at least one number and one uppercase and lowercase
+              letter, and at least 8 or more characters.</small
+            >
+          </div>
+          <div class="pass">
+            <span class="check">
+              <input class="checkbox" type="checkbox" required />Remember me
+            </span>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="login">Login</button>
+        </form>
+      </div>
+      <a href="./signup.html">Not registered yet?create an account</a>
+    </main>
+  </body>
+</html>
